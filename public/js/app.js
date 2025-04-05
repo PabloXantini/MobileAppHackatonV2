@@ -2,7 +2,7 @@
 const info1 = document.querySelector('#formInicio');
 const info2 = document.querySelector('#fomrFinal');
 
-if ("sw" in navigator) {
+if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
       navigator.serviceWorker
         .register("/sw.js")
